@@ -38,9 +38,3 @@ in design is needed. I also look forward to learning more design and I
 have a book that I can hopefully lean on a bit because I find it very
 interesting. The book is called
 [Relearn CSS layout: Every Layout](https://every-layout.dev/).
-
-- [ ] Publicera dina filer till studentservern, dbwebb publish me, och kontrollera att allt fungerar som det ska.
-
-- [ ] Commit:a dina ändringar och lägg till en ny tagg (1.0.*).
-
-- [ ] Push:a repot till GitHub, inklusive taggarna.
