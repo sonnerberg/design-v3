@@ -1,5 +1,5 @@
 ---
-Logo: image/leaf_256x256.png
+Logo: image/me.jpg&filter=pixelate,20,10
 Tagline: My portfolio.
 Social:
   - title: Link till mitt github repo.
