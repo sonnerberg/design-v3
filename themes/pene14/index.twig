@@ -81,7 +81,7 @@
                     {% for social in pages["_meta"].meta.social %}
                     <a href="{{ social.url }}" title="{{ social.title }}"
                         role="button" target="_blank">
-                        <i class="fa fa-{{ social.icon }}"
+                        <i class="{{ social.icon }}"
                             aria-hidden="true"></i>
                         <span class="sr-only">{{ social.title }}</span>
                     </a>
