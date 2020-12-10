@@ -31,7 +31,7 @@
     </head>
     <!-- "Widescreen-mode" can be activated in portfolio/config/config.yml -->
     <body{% if config.theme_config.widescreen %} class="widescreen" {% endif %}>
-        <div class="header" role="banner">
+        <header class="header" role="banner">
             <div class="container">
                 <a class="nav-toggle" id="nav-toggle" title="Toggle Menu"
                     role="button" aria-controls="nav" aria-expanded="false"
@@ -71,7 +71,7 @@
                         src="{{ base_url }}/image/trees-5605176_1280.jpg?sc=banner1&crop=1100,56,143,460">
                 </div>
             </div>
-        </div>
+        </header>
         <main class="main" role="main">
             <div class="container">
                 {{ content }}
