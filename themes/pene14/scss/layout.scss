@@ -1,0 +1,188 @@
+@import 'viewports';
+
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.logo > a:nth-child(1) > img:nth-child(1) {
+    width: 40%;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+@media (min-width: $mobile) {
+    header > .container > .nav-toggle {
+        display: none;
+    }
+
+    /* prettier-ignore */
+    header > .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 1fr;
+        gap: 0 0;
+        grid-template-areas:
+        'logo logo logo logo title title title title title title title title'
+        'logo logo logo logo title title title title title title title title'
+        'logo logo logo logo nav nav nav nav nav nav nav nav'
+        'flash-region flash-region flash-region flash-region flash-region flash-region flash-region flash-region flash-region flash-region flash-region flash-region';
+    }
+
+    .logo {
+        grid-area: logo;
+    }
+
+    .logo > a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .title {
+        grid-area: title;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav {
+        grid-area: nav;
+    }
+
+    .flash-region {
+        grid-area: flash-region;
+    }
+
+    .flash-img {
+        width: 100%;
+    }
+}
+
+@media (max-width: $mobile) {
+    .hidden {
+        display: none;
+    }
+
+    /* prettier-ignore */
+    header > .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 0fr 1fr;
+        gap: 0 0;
+        grid-template-areas:
+        'logo logo logo title title title title title title nav-toggle nav-toggle nav-toggle'
+        'nav nav nav nav nav nav nav nav nav nav nav nav'
+        'flash-region flash-region flash-region flash-region flash-region flash-region flash-region flash-region flash-region flash-region flash-region flash-region';
+    }
+
+    .nav-toggle {
+        grid-area: nav-toggle;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: x-large;
+    }
+
+    .logo {
+        grid-area: logo;
+    }
+
+    .logo a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title {
+        grid-area: title;
+        text-align: center;
+    }
+
+    .nav {
+        grid-area: nav;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        margin: 0;
+
+        li {
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+
+            a {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+        }
+    }
+
+    .flash-region {
+        grid-area: flash-region;
+    }
+}
+
+.slide {
+    animation-duration: 0.6s;
+    animation-name: slide;
+}
+
+@keyframes slide {
+    from {
+        height: 0%;
+    }
+
+    to {
+        height: 100%;
+    }
+}
+
+.nav > div {
+    height: 100%;
+}
+
+.title > a > h1,
+.title > a > p {
+    margin: 0;
+}
+
+// header > .container > .nav-toggle {
+//     order: 10;
+// }
+
+// .title {
+//     order: -4;
+// }
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0 0;
+    grid-template-areas: '. container container container container container container container container container container .';
+}
+
+.container {
+    grid-area: container;
+}
+
+.footer > div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    min-height: calc(82vh - 70px);
+}
+
+footer {
+    height: 50px;
+}

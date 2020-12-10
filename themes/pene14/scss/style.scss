@@ -1,0 +1,22 @@
+@import '../../node_modules/normalize.css/normalize';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/fontawesome';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+/* prettier-ignore */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../shared/googlefonts/Roboto/Roboto-Regular.ttf')
+    format('truetype');
+}
+/* prettier-ignore */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../../shared//googlefonts/Open_Sans/OpenSans-Regular.ttf')
+    format('truetype');
+}
+@import 'variables';
+@import 'layout';
+@import 'styles';
